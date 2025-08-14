@@ -34,14 +34,7 @@
        WORKING-STORAGE SECTION.
 
        01 WS-VARIABLES.
-         05 WS-PGMNAME                 PIC X(08) VALUE 'COBIL00C'.
-         05 WS-TRANID                  PIC X(04) VALUE 'CB00'.
-         05 WS-MESSAGE                 PIC X(80) VALUE SPACES.
-         05 WS-TRANSACT-FILE           PIC X(08) VALUE 'TRANSACT'.
-         05 WS-ACCTDAT-FILE            PIC X(08) VALUE 'ACCTDAT '.
-         05 WS-CXACAIX-FILE            PIC X(08) VALUE 'CXACAIX '.
-         05 WS-ERR-FLG                 PIC X(01) VALUE 'N'.
-           88 ERR-FLG-ON                         VALUE 'Y'.
+         ERR-FLG-ON                         VALUE 'Y'.
            88 ERR-FLG-OFF                        VALUE 'N'.
          05 WS-RESP-CD                 PIC S9(09) COMP VALUE ZEROS.
          05 WS-REAS-CD                 PIC S9(09) COMP VALUE ZEROS.
