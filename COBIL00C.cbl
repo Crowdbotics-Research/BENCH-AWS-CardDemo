@@ -64,6 +64,19 @@
              10 CDEMO-CB00-TRN-SEL-FLG     PIC X(01).
              10 CDEMO-CB00-TRN-SELECTED    PIC X(16).
 
+
+-TRAN-AMT                PIC +99999999.99.
+         05 WS-CURR-BAL                PIC +9999999999.99.
+         05 WS-TRAN-ID-NUM             PIC 9(16) VALUE ZEROS.
+         05 WS-TRAN-DATE               PIC X(08) VALUE '00/00/00'.
+         05 WS-ABS-TIME                PIC S9(15) COMP-3 VALUE 0.
+         05 WS-CUR-DATE-X10            PIC X(10) VALUE SPACES.
+         05 WS-CUR-TIME-X08            PIC X(08) VALUE SPACES.
+
+       COPY COCOM01Y.
+          05 CDEMO-CB00-INFO.
+
+          
        COPY COBIL00.
 
        COPY COTTL01Y.
